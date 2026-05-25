@@ -1204,24 +1204,43 @@ section {
     resize: none;
 }
 .enquiry-submit-btn {
-    display: block;
+    width: 100%;
+    
+    background: linear-gradient(135deg, #0f2e5c, #163d78);
+    
+    color: white;
+    
+    border: none;
+    
+    padding: 16px 24px;
+    
     margin-top: 20px;
-    margin-left: auto;
-
-    padding: 14px 34px;
-
-    width: fit-content;
-
-    font-size: 1.05rem;
-    border-radius: 8px;
+    
+    border-radius: 10px;
+    
+    font-size: 1.1rem;
+    
+    font-weight: 700;
+    
+    font-family: 'Outfit', sans-serif;
+    
+    cursor: pointer;
+    
+    transition: all 0.3s ease;
+    
+    box-shadow: 0 6px 14px rgba(15, 46, 92, 0.18);
 }
-form {
-    display: flex;
-    flex-direction: column;
+
+.enquiry-submit-btn:hover {
+    background: linear-gradient(135deg, #163d78, #1e4d96);
+    
+    transform: translateY(-2px);
+    
+    box-shadow: 0 10px 18px rgba(15, 46, 92, 0.28);
 }
 
-.enquiry-submit-btn {
-    align-self: flex-end;
+.enquiry-submit-btn:active {
+    transform: scale(0.98);
 }
 /* Form success message */
 .form-success-alert {
