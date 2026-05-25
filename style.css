@@ -1204,22 +1204,24 @@ section {
     resize: none;
 }
 .enquiry-submit-btn {
-    position: absolute;
-    right: 50px;
-    bottom: 50px;
-    
-    width: auto;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+
     padding: 14px 34px;
-    
+
+    width: fit-content;
+
     font-size: 1.05rem;
-    
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 8px;
 }
-.enquiry-form-side {
-    position: relative;
-    padding-bottom: 120px;
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.enquiry-submit-btn {
+    align-self: flex-end;
 }
 /* Form success message */
 .form-success-alert {
