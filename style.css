@@ -1206,8 +1206,8 @@ section {
 .enquiry-submit-btn {
     width: fit-content;
     margin-top: 20px;
-    margin-right: auto;
-    display: block;
+    margin-left: auto;
+    display: flex;
     padding: 14px 32px;
     font-size: 1.05rem;
 }
