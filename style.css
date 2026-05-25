@@ -1203,13 +1203,13 @@ section {
     height: 110px;
     resize: none;
 }
-.form-group.full-width:last-child {
-    display: flex;
-    flex-direction: column;
-}
-
-.form-group.full-width:last-child .enquiry-submit-btn {
-    align-self: flex-end;
+.enquiry-submit-btn {
+    width: fit-content;
+    margin-top: 20px;
+    margin-right: auto;
+    display: block;
+    padding: 14px 32px;
+    font-size: 1.05rem;
 }
 /* Form success message */
 .form-success-alert {
