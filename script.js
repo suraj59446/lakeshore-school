@@ -491,3 +491,35 @@ document.addEventListener('DOMContentLoaded', () => {
     document.head.appendChild(style);
 
 });
+// =========================
+// 9. Share Button
+// =========================
+
+const shareBtn = document.querySelector('.share-btn');
+
+if (shareBtn) {
+
+    shareBtn.addEventListener('click', async (e) => {
+
+        e.preventDefault();
+
+        if (navigator.share) {
+
+            await navigator.share({
+                title: 'LAKESHORE English Medium School',
+                text: 'Check out LAKESHORE English Medium School',
+                url: 'https://lakeshoreschool.in'
+            });
+
+        } else {
+
+            navigator.clipboard.writeText(
+                'https://lakeshoreschool.in'
+            );
+
+            alert('Website link copied!');
+        }
+
+    });
+
+}
